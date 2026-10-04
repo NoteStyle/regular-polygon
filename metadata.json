@@ -1,0 +1,6 @@
+{
+  "name": "Polygon Escape: Space Unit 6 Math Quest",
+  "description": "Gamified Year 5 regular polygons escape room and quiz featuring textbook Try These riddle challenges, diagonal counting, and interactive geometry exploration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

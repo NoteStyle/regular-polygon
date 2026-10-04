@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Fredoka', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1e293b;
+    background-color: #f0fdf4;
+    background-image: 
+      radial-gradient(#fde047 1.2px, transparent 1.2px), 
+      radial-gradient(#93c5fd 1.2px, #fefce8 1.2px);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-display {
+  font-family: 'Fredoka', cursive, sans-serif;
+}
+
+.font-mono-math {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Cute Comic / Primary School Animations */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+.animate-wiggle {
+  animation: wiggle 1s ease-in-out infinite;
+}
+
+@keyframes bounce-gentle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+
+.animate-bounce-gentle {
+  animation: bounce-gentle 2.2s infinite ease-in-out;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.92); }
+  50% { transform: scale(1.04); }
+  100% { transform: scale(1); }
+}
+
+.animate-pop {
+  animation: pop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Tactile 3D cartoon button push effect */
+.comic-btn-amber {
+  background-color: #fbbf24;
+  border-bottom: 4px solid #d97706;
+  transition: all 0.1s ease;
+}
+.comic-btn-amber:hover {
+  background-color: #f59e0b;
+}
+.comic-btn-amber:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+}
+
+.comic-btn-indigo {
+  background-color: #6366f1;
+  border-bottom: 4px solid #4338ca;
+  transition: all 0.1s ease;
+}
+.comic-btn-indigo:hover {
+  background-color: #4f46e5;
+}
+.comic-btn-indigo:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+}
+
+.comic-btn-pink {
+  background-color: #f43f5e;
+  border-bottom: 4px solid #be123c;
+  transition: all 0.1s ease;
+}
+.comic-btn-pink:hover {
+  background-color: #e11d48;
+}
+.comic-btn-pink:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+}
+
+.comic-btn-emerald {
+  background-color: #10b981;
+  border-bottom: 4px solid #047857;
+  transition: all 0.1s ease;
+}
+.comic-btn-emerald:hover {
+  background-color: #059669;
+}
+.comic-btn-emerald:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+}
+
+/* Cute Speech Bubble Tail */
+.bubble-tail-left::after {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 24px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 12px solid #fef3c7;
+}
+
+.bubble-tail-left::before {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 23px;
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-right: 14px solid #fde68a;
+}
